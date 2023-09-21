@@ -6,9 +6,9 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-.container{
+/* .container{
     width: 1920px;
-}
+} */
 button{
     cursor: pointer;
 }
@@ -140,36 +140,96 @@ button{
 .flash-con{
     display: flex;
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto;
+    gap: 15px;
+
 }
 .flash-con img{
     width: 250px;
     height: 200px;
     border-radius: 10px;
+    object-fit: cover;
+
 }
 .flash-img{
     position: relative;
 }
 .card-para{
     position: absolute;
-    bottom: -17px;
-    width: 120px;
+    bottom: -1px;
     background: #fccd22;
-    height: 70px;
-    font-size: 32px;
+    height: 55px;
+    font-size: 40px;
     border-radius: 0px 20px 0px 10px;
     display: flex;
     align-items: center;
     color: #fff;
+    margin: 5px 0px;
+    padding: 0px 10px;
+    padding-right: 30px;
+
 }
 .card-para span{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     display: flex;
+    flex-direction: column;
+    margin-left: 5px;
 
 }
 small{
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 200;
     display: flex;
+}
+.flash-con button{
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    color: #f17228;
+    background: #fce3d4;
+}
+h3{
+    color: #424242;
+}
+
+.work-con{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient( #fff9ed  , #fff );
+}
+.work-con h1{
+    color: #df793e;
+    
+}
+.work-card-container{
+    display: flex;
+    width: 70%;
+    margin-top: 20px;
+}
+.work-card-container img{
+    width: 80px;
+    height: 100px;
+}
+.meal{
+    width: 100px !important;
+}
+.work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.work-card p{
+    text-align: center;
+    margin: 0;
+    color: #918e8e;
+    font-weight: 200;
 }
