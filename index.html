@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>food-wagon</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
@@ -25,9 +26,10 @@
                 </p>
             </div>
             <div class="top-login-con">
-                <p>
-                    <i class="ri-search-line"></i> search Food
-                </p>
+                <div class="input-login">
+                    <input type="text" name="" placeholder="Search Food">
+                    <i class="ri-search-line search-input"></i>
+                </div>
                 <button><i class="ri-user-fill"></i> Login</button>
             </div>
         </div>
@@ -46,10 +48,12 @@
                         </p>
                     </div>
                     <div class="search-bottom">
-                        <input type="text" name="" class="address-inp" placeholder="Enter Your address">
-                        <i class="ri-map-pin-2-fill user"></i>
-
-                        <button><i class="ri-search-line"></i> Find Food</button>
+                        <div class="search-bottom-input">
+                            <input type="text" name="" class="address-inp" placeholder="Enter Your address">
+                            <i class="ri-map-pin-2-fill user"></i>
+                        </div>
+                        
+                        <button class="find-btn"> Find Food</button>
                     </div>
                 </div>
             </div>
@@ -57,8 +61,8 @@
                 <img src="./img/header-img.png" alt="">
             </div>
         </div>
-        <div class="flash-con">
-            <div class="flash-card">
+        <div class="flash-con row ">
+            <div class="flash-card col-md-6">
                 <div class="flash-img">
                     <img src="./img/discount-item-4.png" alt="">
                     <h1 class="card-para">
@@ -69,7 +73,7 @@
                 <h3>Grey Vage</h3>
                 <button>6 Days Remaining</button>
             </div>
-            <div class="flash-card">
+            <div class="flash-card col-md-6">
                 <div class="flash-img">
                     <img src="./img/discount-item-2.png" alt="">
                     <h1 class="card-para">
@@ -80,7 +84,7 @@
                 <h3>Grey Vage</h3>
                 <button>6 Days Remaining</button>
             </div>
-            <div class="flash-card">
+            <div class="flash-card col-md-6" >
                 <div class="flash-img">
                     <img src="./img/discount-item-1.png" alt="">
                     <h1 class="card-para">
@@ -91,7 +95,7 @@
                 <h3>Grey Vage</h3>
                 <button>7 Days Remaining</button>
             </div>
-            <div class="flash-card">
+            <div class="flash-card col-md-6">
                 <div class="flash-img">
                     <img src="./img/discount-item-3.png" alt="">
                     <h1 class="card-para">
