@@ -286,7 +286,7 @@ h3 {
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
-   
+
 }
 
 .work-card-container img {
@@ -419,9 +419,11 @@ h3 {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .featured-card {
     width: 340px;
 }
+
 .featured-res {
     width: 100%;
     margin: 0 auto;
@@ -492,7 +494,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+
 }
 
 .cat-img-con img {
@@ -687,21 +689,35 @@ h3 {
     padding: 10px 40px;
     column-gap: 40px;
     column-count: 5;
-    width: 80%;
+
     color: #f5f5f5;
     font-weight: 300;
+}
+
+.footer-list-con {
+    color: #ebe6e6;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-con {
     background: #000;
     padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-con>p {
+.footer-con .footer-head>p {
     color: #fff;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 25px;
+    line-height: 25px;
     font-weight: 600;
 }
 
@@ -736,6 +752,7 @@ li {
     margin-top: 80px;
     padding-top: 80px;
     padding-bottom: 80px;
+    flex-wrap: wrap;
 }
 
 .bottom-right button {
@@ -750,10 +767,12 @@ li {
 }
 
 .bottom-right input {
-    padding: 20px 40px;
+    padding: 16px 40px;
     border-radius: 10px;
     border: none;
     background: #424242;
+    font-size: 18px;
+    color: #fff;
 }
 
 .bottom-right input::placeholder {
@@ -784,7 +803,8 @@ li {
 
 .social-icon {
     color: #636363;
-    font-size: 22px;
+    font-size: 30px;
+    transition: transform 0.3s ease !important;
 }
 
 .footer-copyright {
@@ -795,21 +815,39 @@ li {
 }
 
 .footer-copyright span {
-    color: #fff;
+    color: #ffb20e;
     font-weight: 600;
 }
-@media screen and (max-width: 1200px) {
-    .search-right img{
+.social-icon i:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease; 
+}
+.social-icon .insta:hover{
+    scale: 1.5;
+    color: rgb(122, 56, 56);
+}
+.social-icon .facebook:hover{
+    color: #0866ff;
+}
+.social-icon .twitter:hover{
+    color: #1da1f2;
+}
+
+@media screen and (max-width: 1224px) {
+    .search-right img {
         width: 40%;
     }
-    .search-left h1{
+
+    .search-left h1 {
         font-size: 50px;
         line-height: 50px;
     }
-    .install-bottom>img{
+
+    .install-bottom>img {
         display: none;
 
     }
+
     .install-bottom-para {
         margin-bottom: 143px;
         text-align: center;
@@ -818,18 +856,25 @@ li {
         align-items: center;
         justify-content: center;
     }
-    .deal-card{
+
+    .deal-card {
         width: 90%;
     }
+    .bottom-left {
+        gap: 40px;
+    }
 
-    
+
 }
+
 @media screen and (max-width: 1024px) {
-    .deal-card{
+    .deal-card {
         flex-wrap: wrap;
         height: auto;
     }
-    .deal-card-left, .deal-card-right{
+
+    .deal-card-left,
+    .deal-card-right {
         width: 100%;
     }
 }
@@ -878,24 +923,41 @@ li {
     .search-left p {
         font-size: 15px;
     }
-    .flash-con{
+
+    .flash-con {
         width: 100%;
     }
-    .populor-con button{
+
+    .populor-con button {
         display: none;
     }
-    .cat-heading{
+
+    .cat-heading {
         display: none;
     }
-    .live-tracking{
+
+    .live-tracking {
         border: none;
         padding: 0;
     }
-    .install-bottom h1{
+
+    .install-bottom h1 {
         font-size: 40px;
         line-height: 40px;
     }
-    
+
+    .footer-list-con {
+        justify-content: space-evenly;
+    }
+
+    .footer-list-2,
+    .footer-list-3 {
+        display: none;
+    }
+    .footer-bottom {
+        justify-content: space-around;
+    }
+
 }
 
 
@@ -911,28 +973,58 @@ li {
     .search-bottom button {
         width: 100%;
     }
+
     .search-left h1 {
         font-size: 30px;
         line-height: 30px;
     }
+
     .search-left p {
         font-size: 12px;
     }
-    .install-bottom h1{
+
+    .install-bottom h1 {
         font-size: 30px;
         line-height: 30px;
     }
-    .install-img-1 img{
+
+    .install-img-1 img {
         width: 50%;
     }
-    .install-img-1 p{
+
+    .install-img-1 p {
         font-size: 20px;
         line-height: 20px;
     }
-    .deal-card button{
+
+    .deal-card button {
         font-size: 18px;
         line-height: 18px;
         padding: 15px 15px;
     }
-    
+
+    .mobile-list-2 {
+        display: none;
+    }
+
+    .footer-list-4 {
+        display: none;
+    }
+
+    .legal {
+        display: none;
+    }
+
+    .footer-inp {
+        flex-wrap: wrap;
+    }
+
+    .bottom-right input {
+        width: 100%;
+
+    }
+
+    .bottom-right button {
+        width: 100%;
+    }
 }
