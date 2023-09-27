@@ -7,9 +7,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+/* .container {
     width: 1920px;
-} 
+}  */
 
 button {
     cursor: pointer;
@@ -832,7 +832,33 @@ li {
 .social-icon .twitter:hover{
     color: #1da1f2;
 }
+.image-con{
+    background-image: url(./img/footer-image.png);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    padding: 80px 0px;
+    text-align: center;
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+.image-con h1{
+    font-weight: 900;
+    font-size: 57px;
+    line-height: 60px;
+}
+.image-con button{
+    border-radius: 8px;
+    padding: 21px 48px 21px 48px;
+    background: linear-gradient(#f17228 100% , #f15e28);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+}
 @media screen and (max-width: 1224px) {
     .search-right img {
         width: 40%;
